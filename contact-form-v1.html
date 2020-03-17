@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign Up Form</title>
+  <style>
+
+    * {
+      font-family: sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background: #010b3d;
+    }
+
+    .container {
+      margin: auto;
+      padding: auto;
+      height: 800px;
+      width: 500px;
+      background: #e4e5eb;
+      border-radius: 10px;
+    }
+
+    h1 {
+     font-size: 48px;
+     text-align: center;
+     padding-top: 20px;
+    }
+
+   h3 {
+      font-size: 20px;
+      text-align: center;
+      padding-top: 15px;
+      
+    }
+
+    .footer-paragraph p {
+      text-align: center;
+      color: white;
+
+    }
+
+    .footer-paragraph p a {
+      color: limegreen;
+    }
+
+  .terms-conditions p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background: #12b5aa;
+    border-radius: 10px;
+    height: 40px;
+    width: 450px;
+    cursor: pointer;
+  }
+
+  .btn {
+    text-align: center;
+  }
+
+  input[type=text] {
+    width: 90%;
+    padding-top: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+  }
+  input[type=email] {
+    width: 90%;
+    padding-top: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+  }
+  input[type=password] {
+    width: 90%;
+    padding-top: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+a:hover {
+  background-color: aqua;
+}
+
+  </style>
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <h3>It's free and only takes a minute</h3>
+    <form action="process.php">
+    <!-- First Name -->
+    <br>
+    <div>
+      <label for="first-name">First Name</label><br>
+      <input type="text" id="first-name" name="first-name"><br>
+    </div>
+    <br>
+    <!-- Last Name -->
+     <div>
+      <label for="last-name">Last Name</label><br>
+      <input type="text" id="last-name" name="last-name"><br>
+    </div>
+    <br>
+    <!-- Email -->
+     <div>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email"><br>
+    </div>
+    <br>
+    <!-- Password -->
+    <div>
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password"><br>
+    </div>
+    <br>
+    <!-- Confirm Password -->
+    <div>
+      <label for="password">Confirm Password</label><br>
+      <input type="password" id="confirm-passowrd" name="confirm-password"><br>
+    </div>
+    <br>
+    <div class="btn">
+    <button>Sign Up</button>
+    </div>
+    <br>
+    <div class="terms-conditions">
+    <p>By clicking the Sign Up button you agree to our Terms & Conditions and Privacy Policy</p>
+    </div>
+    </form>
+  </div>
+  <br>
+  <div class="footer-paragraph">
+  <p>Already have an account? <a href="#">Login Here</a></p>
+  </div>
+</body>
+</html>

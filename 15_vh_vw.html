@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Viewport Height & Width</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+  /* Notice how we use viewport height to fill the background of the entire webpage to a dark color  */
+
+    header {
+      background: #333 url(https://source.unsplash.com/random
+) no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 15rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      margin: 1rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #f4f4f4;
+      color: #333;
+      padding: .75rem 2rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    /* We used a quick media querie to make our webpage look good on mobile landscape */
+
+    @media(max-height: 450px) {
+      header {
+        padding-top: 5rem;
+      }
+    }
+   
+  </style>
+</head>
+<!-- Viewport Height and Width are 100 slices of the webpage that go horizontal and verticle. -->
+<body>
+  <header>
+    <h1>Welcome To Our Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, asperiores provident. Molestiae, temporibus! Quaerat, sunt.</p>
+    <a class="btn" href="#">Find Out More</a>
+  </header>
+  <section>
+    <h3>About Our Company</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique assumenda, dolorem eos nam excepturi soluta voluptate, vel laboriosam voluptas ipsum error facilis quis id rem unde commodi suscipit quas alias. Nostrum reprehenderit natus ex sequi voluptatum libero, excepturi aliquam iste impedit maxime dolores cumque enim rem, modi eos recusandae?</p>
+  </section>
+</body>
+</html>

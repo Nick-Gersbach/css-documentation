@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selectors</title>
+  <style>
+    /* Element/Tag Selector*/
+    body {
+      background-color: #333;
+    }
+
+    #green-heading {
+      color: green;
+    }
+
+  /* . is for classes */
+    .red-heading {
+      color: red;
+    }
+  /* # is for */
+    #welcome {
+      background-color: #f4f4f4;
+    }
+
+    /* Multiple selectors */
+
+    #welcome, #about, h2, p {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    /* Nested Selectors - don't use a comma if you only want to select all p's in the welcome div. Using the comma will select the welcome div and all p's on the page. */
+    #welcome p {
+      font-size: 20px;
+    }
+
+    #about {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <h2 id="green-heading">Welcome</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dicta beatae! Quasi libero pariatur totam neque iusto delectus odit quibusdam?</p>
+  </div>
+    <div id="about">
+      <h2 class="red-heading">About</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugit, exercitationem quidem obcaecati tempore aliquam vel laudantium cumque ipsa itaque!</p>
+    </div>
+</body>
+</html>

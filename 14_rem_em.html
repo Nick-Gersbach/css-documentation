@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Em and Rem Units</title>
+  <style>
+  /* Lots of developers set the root element, in this case font size, to 10px because it is easy to calculate rems with multiples of 10 */
+  html {
+    font-size: 10px;
+  }
+
+  #box-2 h3 {
+    font-size: 2.3rem;
+  }
+
+  #box-2 h3 {
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+  }
+  </style>
+</head>
+<!-- What is and rem?
+
+An rem is multiplier of the default size of an element. For example, the default font size of text in a browser is 16px. That means that - 
+
+1rem = 16px
+
+1.5rem = 24px
+
+2rem = 32px
+
+and so on...
+
+Most dvelopers including Brad don't use ems because they can get very confusing when it comes to how padding and margins are effected by using them.
+ -->
+<body>
+  <div id="box-1">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facere laudantium corporis, commodi deserunt quidem laborum dolorem vitae architecto soluta!</p>
+  </div>
+   <div id="box-2">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facere laudantium corporis, commodi deserunt quidem laborum dolorem vitae architecto soluta!</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float & Align</title>
+  <style>
+/* We used a global border-box so that our float widths didn't get messed up. */
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+
+    /* If you want to center the content of the web page which is modern styling for web pages, you need to wrap all the content in a div called .container or .wrapper. Once you place the content in the div you need to select it in CSS and give it your desired width and a margin of auto. If you want some space on the sides of your centered content you could do something like margin: 30px auto; */
+
+    .container {
+      /* width: 960px; */
+
+      /* Max-Width Property - If you want all of your content to display on mobile screens you have to use the max-width property instead of using just width. */
+
+      max-width: 960px;
+      margin: 30px auto;
+    }
+
+    .clr {
+      clear: both;
+    }
+
+    .box {
+      background: #f4f4f4;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+    /* Text-align */
+    .box p {
+      /* You can align text to the left, right, and center */
+      text-align: center;
+      /* Justify makes all the edges of text even */
+      text-align: justify;
+    }
+/* Floating a box. You need to add a width when you float something or it won't make much of a difference. */
+    #box-2 {
+      float: left;
+      /* It's much better to use %s for your float box width to make a design responsive */
+      width: 70%;
+      /* We changed the width from 70% to 68% so that the main content area wasn't right on top of the side bar. */
+      width: 68%;
+    } 
+
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi laborum aut neque accusamus. Corporis nulla libero iure necessitatibus eveniet.</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi laborum aut neque accusamus. Corporis nulla libero iure necessitatibus eveniet.</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi laborum aut neque accusamus. Corporis nulla libero iure necessitatibus eveniet.</p>
+    </div>
+
+<!-- We created a utility class named .clr for clear. This helped us clear our floats for boxes 2 and 3 so that our box 4 wasn't right on top of them. Take away the clr div to see what happens. -->
+
+<div class="clr"></div>
+
+    <div id="box-4" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi laborum aut neque accusamus. Corporis nulla libero iure necessitatibus eveniet.</p>
+    </div>
+  </div>
+</body>
+</html>
